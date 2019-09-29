@@ -24,9 +24,11 @@ const HomePage = ({ data }) => {
           py: '2rem',
           fontSize: [30, 40],
           fontWeight: 700,
+          maxWidth: 250,
+          mx: 'auto',
         }}
       >
-        WUALIB
+        <Img fluid={data.logo.childImageSharp.fluid} alt="WUALIB" />
       </h1>
       <section
         className="introduction"
@@ -78,8 +80,12 @@ const HomePage = ({ data }) => {
           mx: 'auto',
         }}
       >
-        <Img fluid={data.affiche.childImageSharp.fluid} />
-        <Img sx={{ mt: '3rem' }} fluid={data.programme.childImageSharp.fluid} />
+        <Img fluid={data.affiche.childImageSharp.fluid} alt="" />
+        <Img
+          sx={{ mt: '3rem' }}
+          fluid={data.programme.childImageSharp.fluid}
+          alt=""
+        />
       </section>
       <footer
         sx={{
@@ -117,7 +123,7 @@ const HomePage = ({ data }) => {
               }}
             >
               <li>Symposium & Cadaver Workshop</li>
-              <li>15-16. 11. 2019</li>
+              <li>15&16.11.2019</li>
               <li>Bruxelles</li>
             </ul>
           </div>
@@ -144,7 +150,7 @@ const HomePage = ({ data }) => {
             >
               <li>
                 <a href="mailto:mailto:Lucia_porto@stpierre-bru.be">
-                  mailto:Lucia_porto@stpierre-bru.be
+                  Lucia_porto@stpierre-bru.be
                 </a>
               </li>
               <li>
@@ -172,6 +178,13 @@ export default HomePage;
 
 export const query = graphql`
   query {
+    logo: file(relativePath: { eq: "logo-original.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 250) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     affiche: file(relativePath: { eq: "affiche.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
