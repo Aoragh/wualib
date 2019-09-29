@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
+import { Helmet } from 'react-helmet';
 import 'normalize.css';
 
 const HomePage = ({ data }) => {
@@ -14,6 +15,11 @@ const HomePage = ({ data }) => {
         fontFamily: `-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif`,
       }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>WUALIB</title>
+        <link rel="canonical" href="https://wualib.be" />
+      </Helmet>
       <h1
         sx={{
           textAlign: 'center',
@@ -82,7 +88,7 @@ const HomePage = ({ data }) => {
           bg: '#DE5C36',
           color: 'white',
           mt: '3rem',
-          py: '1.5rem',
+          py: '1rem',
         }}
       >
         <div
@@ -149,7 +155,14 @@ const HomePage = ({ data }) => {
             </ul>
           </div>
         </div>
-        <div>©2019 Tous droits reservés - WUALIB</div>
+        <div
+          sx={{
+            textAlign: 'center',
+            fontSize: 10,
+          }}
+        >
+          ©2019 Tous droits reservés - WUALIB
+        </div>
       </footer>
     </div>
   );
