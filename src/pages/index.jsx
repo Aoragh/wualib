@@ -1,7 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import React from 'react';
-import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { Helmet } from 'react-helmet';
 import 'normalize.css';
@@ -145,8 +143,8 @@ const HomePage = ({ data }) => {
               }}
             >
               <li>
-                <a href="mailto:Luciaporto@stpierre-bru.be">
-                  Luciaporto@stpierre-bru.be
+                <a href="mailto:mailto:Lucia_porto@stpierre-bru.be">
+                  mailto:Lucia_porto@stpierre-bru.be
                 </a>
               </li>
               <li>
