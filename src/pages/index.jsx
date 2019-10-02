@@ -149,8 +149,8 @@ const HomePage = ({ data }) => {
               }}
             >
               <li>
-                <a href="mailto:mailto:Lucia_porto@stpierre-bru.be">
-                  Lucia_porto@stpierre-bru.be
+                <a href="mailto:Secretariat.anesthesiologie@stpierre-bru.be">
+                  Secretariat.anesthesiologie@stpierre-bru.be
                 </a>
               </li>
               <li>
