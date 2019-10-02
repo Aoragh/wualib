@@ -71,6 +71,17 @@ const HomePage = ({ data }) => {
           adapté pour poursuivre ces actes techniques dans les centres et
           cliniques de chaque participant.
         </p>
+        <p
+          sx={{
+            fontWeight: 600,
+            fontSize: 20,
+            mt: 60,
+            textAlign: 'center',
+          }}
+        >
+          Pour vous inscrire:{' '}
+          <a href="https://wualib.typeform.com/to/R2ZuoO">Cliquez ici</a>
+        </p>
       </section>
       <section
         className="affiches"
@@ -86,6 +97,19 @@ const HomePage = ({ data }) => {
           fluid={data.programme.childImageSharp.fluid}
           alt=""
         />
+
+        <p
+          sx={{
+            fontWeight: 600,
+            fontSize: 20,
+            mt: 60,
+            mb: 60,
+            textAlign: 'center',
+          }}
+        >
+          Pour vous inscrire:{' '}
+          <a href="https://wualib.typeform.com/to/R2ZuoO">Cliquez ici</a>
+        </p>
       </section>
       <footer
         sx={{
@@ -145,9 +169,17 @@ const HomePage = ({ data }) => {
                 a: {
                   color: 'white',
                   textDecoration: 'none',
+                  '&:hover': {
+                    textDecoration: 'underline',
+                  },
                 },
               }}
             >
+              <li>
+                <a href="https://wualib.typeform.com/to/R2ZuoO">
+                  Formulaire d'inscription
+                </a>
+              </li>
               <li>
                 <a href="mailto:Secretariat.anesthesiologie@stpierre-bru.be">
                   Secretariat.anesthesiologie@stpierre-bru.be
