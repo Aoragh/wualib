@@ -178,9 +178,9 @@ export default HomePage;
 
 export const query = graphql`
   query {
-    logo: file(relativePath: { eq: "logo-original.png" }) {
+    logo: file(relativePath: { eq: "logo.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 250) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
