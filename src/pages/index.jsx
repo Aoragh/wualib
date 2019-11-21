@@ -176,7 +176,7 @@ const HomePage = ({ data }) => {
               }}
             >
               <li>
-                <a href="https://wualib.typeform.com/to/R2ZuoO">
+                <a href="https://asbab.typeform.com/to/R2ZuoO">
                   Formulaire d'inscription
                 </a>
               </li>
