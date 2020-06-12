@@ -10,7 +10,6 @@ const HomePage = ({data}) => {
     <div
       sx={{
         pt: ['3rem', '4rem'],
-        backgroundColor: '#fff',
         fontSize: 16,
         fontFamily: `-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif`,
       }}
@@ -197,6 +196,7 @@ const HomePage = ({data}) => {
           sx={{
             textAlign: 'center',
             fontSize: 10,
+            mt: 30,
           }}
         >
           ©2019 Tous droits reservés - WUALIB
