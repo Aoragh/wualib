@@ -1,10 +1,11 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import Img from 'gatsby-image';
-import { Helmet } from 'react-helmet';
-import 'normalize.css';
+import {jsx} from 'theme-ui'
+import Img from 'gatsby-image'
+import {Helmet} from 'react-helmet'
+import {graphql} from 'gatsby'
+import 'normalize.css'
 
-const HomePage = ({ data }) => {
+const HomePage = ({data}) => {
   return (
     <div
       sx={{
@@ -92,11 +93,11 @@ const HomePage = ({ data }) => {
         }}
       >
         <Img fluid={data.affiche.childImageSharp.fluid} alt="" />
-        <Img
+        {/* <Img
           sx={{ mt: '3rem' }}
           fluid={data.programme.childImageSharp.fluid}
           alt=""
-        />
+        /> */}
 
         <p
           sx={{
@@ -147,7 +148,7 @@ const HomePage = ({ data }) => {
               }}
             >
               <li>Symposium & Cadaver Workshop</li>
-              <li>15&16.11.2019</li>
+              <li>13 & 14.11.2020</li>
               <li>Bruxelles</li>
             </ul>
           </div>
@@ -201,35 +202,35 @@ const HomePage = ({ data }) => {
         </div>
       </footer>
     </div>
-  );
-};
+  )
+}
 
-HomePage.propTypes = {};
+HomePage.propTypes = {}
 
-export default HomePage;
+export default HomePage
 
 export const query = graphql`
   query {
-    logo: file(relativePath: { eq: "logo.jpg" }) {
+    logo: file(relativePath: {eq: "logo.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    affiche: file(relativePath: { eq: "affiche.jpg" }) {
+    affiche: file(relativePath: {eq: "affiche2020.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    programme: file(relativePath: { eq: "programme.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
+    # programme: file(relativePath: { eq: "programme.jpg" }) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 800) {
+    #       ...GatsbyImageSharpFluid_withWebp_tracedSVG
+    #     }
+    #   }
+    # }
   }
-`;
+`

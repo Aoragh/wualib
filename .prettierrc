@@ -1,0 +1,9 @@
+{
+  "parser": "typescript",
+  "arrowParens": "always",
+  "bracketSpacing": false,
+  "jsxBracketSameLine": false,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all"
+}
