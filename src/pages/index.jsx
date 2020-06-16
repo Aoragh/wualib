@@ -128,6 +128,13 @@ const HomePage = ({data}) => {
             display: 'flex',
             flexDirection: ['column', 'row'],
             justifyContent: 'space-between',
+            a: {
+              color: 'white',
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+            },
           }}
         >
           <div>
@@ -150,6 +157,9 @@ const HomePage = ({data}) => {
               <li>Symposium & Cadaver Workshop</li>
               <li>13 & 14.11.2020</li>
               <li>Bruxelles</li>
+              <li>
+                <a href="mailto:info@wualib.be">info@wualib.be</a>
+              </li>
             </ul>
           </div>
           <div>
@@ -167,13 +177,6 @@ const HomePage = ({data}) => {
                 li: {
                   mb: '.5rem',
                 },
-                a: {
-                  color: 'white',
-                  textDecoration: 'none',
-                  '&:hover': {
-                    textDecoration: 'underline',
-                  },
-                },
               }}
             >
               <li>
@@ -182,9 +185,7 @@ const HomePage = ({data}) => {
                 </a>
               </li>
               <li>
-                <a href="mailto:Secretariat.anesthesiologie@stpierre-bru.be">
-                  Secretariat.anesthesiologie@stpierre-bru.be
-                </a>
+                <a href="mailto:inscription@wualib.be">inscription@wualib.be</a>
               </li>
               <li>
                 <a href="tel:+3225353593">+32 2 535 35 93</a>
