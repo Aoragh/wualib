@@ -6,6 +6,7 @@ import {graphql} from 'gatsby'
 import 'normalize.css'
 
 const HomePage = ({data}) => {
+  const currentYear = new Date().getFullYear()
   return (
     <div
       sx={{
@@ -200,7 +201,7 @@ const HomePage = ({data}) => {
             mt: 30,
           }}
         >
-          ©2019 Tous droits reservés - WUALIB
+          ©{currentYear} Tous droits reservés - WUALIB
         </div>
       </footer>
     </div>
