@@ -156,7 +156,7 @@ const HomePage = ({data}) => {
               }}
             >
               <li>Symposium & Cadaver Workshop</li>
-              <li>13 & 14.11.2020</li>
+              <li>2&egrave;me &eacute;dition</li>
               <li>Bruxelles</li>
               <li>
                 <a href="mailto:info@wualib.be">info@wualib.be</a>
