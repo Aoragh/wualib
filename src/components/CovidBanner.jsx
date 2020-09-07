@@ -6,7 +6,7 @@ const CovidBanner = () => {
     <div
       sx={{
         backgroundColor: 'rgb(253, 236, 234)',
-        bg: 'primary',
+        bg: '#f44336',
         color: 'white',
         display: 'flex',
         justifyContent: 'center',
