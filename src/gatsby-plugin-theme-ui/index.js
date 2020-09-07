@@ -4,7 +4,7 @@ export default {
   space: [],
   fontSizes: [],
   colors: {
-    primary: '#055064',
+    primary: '#DE5C36',
     text: '#042D37',
     background: '#fff',
   },

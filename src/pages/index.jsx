@@ -117,7 +117,7 @@ const HomePage = ({data}) => {
       </section>
       <footer
         sx={{
-          bg: '#DE5C36',
+          bg: 'primary',
           color: 'white',
           mt: '3rem',
           py: '1rem',

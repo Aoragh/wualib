@@ -6,7 +6,8 @@ const CovidBanner = () => {
     <div
       sx={{
         backgroundColor: 'rgb(253, 236, 234)',
-        color: 'rgb(97, 26, 21)',
+        bg: 'primary',
+        color: 'white',
         display: 'flex',
         justifyContent: 'center',
         px: 25,
@@ -15,12 +16,11 @@ const CovidBanner = () => {
           '0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)',
       }}
     >
-      <p sx={{my: 0, maxWidth: 1000}}>
-        Important: Suite au contexte actuel du <b>COVID 19</b> la
-        deuxi&egrave;me edition du Symposium & Cadaver Workshop WUALIB sera{' '}
-        <b>postpos&eacute;e dans le courant du mois d'avril</b>. La date
-        pr&eacute;cise sera communiqu&eacute;e sur le site en fonction de
-        l'&eacute;volution de la situation.
+      <p sx={{my: 0, maxWidth: 800, fontSize: 15}}>
+        Suite à la pandémie COVID19 et aux mesures fédérales en cours, le
+        workshop du WUALIB sera reporté ultérieurement. Les inscriptions sont
+        possibles, nous vous tiendrons informé des dates choisies pour
+        l'événement.
       </p>
     </div>
   )
