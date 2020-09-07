@@ -3,6 +3,7 @@ import {jsx} from 'theme-ui'
 import Img from 'gatsby-image'
 import {Helmet} from 'react-helmet'
 import {graphql} from 'gatsby'
+import CovidBanner from '../components/CovidBanner'
 import 'normalize.css'
 
 const HomePage = ({data}) => {
@@ -10,7 +11,6 @@ const HomePage = ({data}) => {
   return (
     <div
       sx={{
-        pt: ['3rem', '4rem'],
         fontSize: 16,
         fontFamily: `-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif`,
       }}
@@ -20,8 +20,10 @@ const HomePage = ({data}) => {
         <title>WUALIB</title>
         <link rel="canonical" href="https://wualib.be" />
       </Helmet>
+      <CovidBanner />
       <h1
         sx={{
+          pt: ['3rem', '4rem'],
           textAlign: 'center',
           py: '2rem',
           fontSize: [30, 40],
